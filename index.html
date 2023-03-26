@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Niranjana Nambiar's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href='https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap'>
+    <link rel="stylesheet" href="jquery.flipster.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <script src="https://kit.fontawesome.com/bd1cc8308d.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top!</button>
+    <script>
+        mybutton = document.getElementById("myBtn");
+
+        function scrollFunction() {
+            console.log(document.body.scrollTop )
+            console.log(document.documentElement.scrollTop)
+  
+            if (document.body.scrollTop > 70 || document.documentElement.scrollTop > 70) 
+                mybutton.style.display = "block";
+            else 
+                mybutton.style.display = "none";
+        }
+
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+        window.onscroll = function() {
+            scrollFunction()
+        }
+
+        scrollFunction();
+    </script>
+
+
+
+
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="logo"><a href="#">Niranjana <span>Nambiar.</span></a></div>
+            <ul class="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#quote">Art</a></li>
+                <li><a href="#section_counter">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!--Home Section-->
+    <section class ="home" id = "home">
+        <div class="max-width">
+            <div class="home-content">
+                <div class="text-1">Hello, my name is </div>
+                <div class="text-2">Niranjana Nambiar!</div>
+                <div class="text-3">I'm <span class ="typing"></span></div>
+                <script>
+                    // typing animation 
+                    var typed = new Typed(".typing", {
+                        strings: ["a Web Developer.", "an artist.", "a learner.", "a writer.", "a Technology-Enthusiast.", "an ambitious student.", "a researcher."], 
+                        typeSpeed: 100, 
+                        backSpeed: 60, 
+                        loop: true
+                    });
+                </script>
+            </div>
+        </div>
+    </section>
+
+    <!--About Section-->
+    <section class ="about" id = "about">
+        <div class = "container">
+            <div class = "row">
+
+                <div class="about-col-1">
+                    <img src=".vscode/assets/images/me.jpg">
+                    <div class = "resume">
+                        <a href = "#">View my resume here!</a>
+                    </div>
+                </div>
+                
+                <div class="about-col-2">
+                    <h1 class = "sub-title">Get to Know Me</h1>
+                    <p class = "sub-text">Hello World! My name is Niranjana Nambiar. I am currently a junior in highschool, studying under the International Business and Technology (IBT) Program. Please view this website on a laptop for the best experience!</p>
+                    <div class="tab-titles">
+                        <p class = "tab-links active-link" onclick="opentab('academics')">Academics</p>
+                        <p class = "tab-links" onclick="opentab('atschool')">At School</p>
+                        <p class = "tab-links" onclick="opentab('work')">Work</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="academics">
+                        <div class = "column">
+                        <br>
+                        <h3>Grade 10</h3>
+                            <ul>
+                                <li><span>Principles of Mathematics - MPM2DR</span><br>98%</li>
+                                <li><span>Science - SNC2DR</span><br>96%</li>
+                                <li><span>Introduction to Computer Studies - ICS2O0</span><br>95%</li>
+                                <li><span>Introduction to Business - BBI2OR</span><br>95%</li>
+                                <li><span>English - ENG2DR</span><br>95%</li>
+                            </ul>
+                        </div>
+                        <div class = "column">
+                        <br>
+                        <h3>Grade 11</h3>
+                            <ul>
+                                <li><span>Chemistry - SCH3U0</span><br>96%</li>
+                                <li><span>Physics - SPH3U0</span><br>93%</li>
+                                <li><span>English - ENG2DR</span><br>95%</li>
+                                <li><span>Financial Accounting Fundamentals - BAF3MR</span><br>94%</li>
+                                <li><span>Introduction to Computer Science - ICS3UR</span><br>Ongoing</li>
+                                <li><span>Computer Engineering Technology - TEJ3MR</span><br>Ongoing</li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                    <div class="tab-contents" id="atschool">
+                        <div class = "column">
+                            <ul>
+                                <br>
+                                <li><span>Sept 2022 - Present</span><br>DECA Trainer</li>
+                                <br>
+                                <li><span>Sept 2022 - Present</span><br>Grade 11 IBT Student Activity Council Representative</li>
+                                <br>
+                                <li><span>Apr 2022 - Present</span><br>Link Crew Leader</li>
+                                <br>
+                                <li><span>Sept 2022</span><br>2022 JOT Business Competition Top Performer Award</li>
+                                <br>
+                                <li><span>Sept 2021 - Jun 2022</span><br>Marketing Director at STEMPIRE - STEM club</li>
+                                <br>
+                                <li><span>Apr 2022</span><br>DECA Junior Team Leader</li>
+                            </ul>
+                        </div>
+                        <div class = "column">
+                            <ul>
+                                <br>
+                                <li><span>Jan 2021 - Jun 2021</span><br>Film Club Junior Executive</li>
+                                <br>
+                                <li><span>Nov 2020 - Jun 2021</span><br>Grade 9 IBT Student Activity Council Representative</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="tab-contents" id="work">
+                        <div class = "column">
+                            <ul>
+                                <li><span>Mar 2023</span><br>Research Exploration Opportunity program Research Fellow at the University of Toronto - Mississauga</li>
+                                <br>
+                                <li><span>Nov 2021 - Feb 2023</span><br>University of Waterloo Canadian Intermediate Mathematics and Fermat Mathematics Competition Participant</li>
+                                <br>
+                                <li><span>Apr 2022 - Sept 2022</span><br>Distinction student; Annamalai University's Grade 3 Bharathnatyam and Carnatic vocal exams</li>
+                                <br>
+                                <li><span>Aug 2022</span><br>Python Programming mentor at Brampton's RaspberryPi Jam</li>
+                                <br>
+                                <li><span>Mar 2020 - Aug 2022</span><br>Youth Volunteer at Brampton Library</li>
+                                <br>
+                                <li><span>Apr 2022 - May 2022</span><br>Centre of the Expressions Art Competition at Peel Art Gallery, Museum + Archives</li>
+                                <br>
+
+                            </ul>
+                        </div>
+                        <div class = "column">
+                            <ul>
+                                <li><span>Dec 2021</span><br>Youth Culture Skills and Development Project Intern</li>
+                                <br>
+                                <li><span>Aug 2021 - Oct 2021</span><br>Research Fellow at STEMFellowship's Online Research Exploration Opportunity</li>
+                                <br>
+                                <li><span>Aug 2021</span><br>Featured artist on Amnesty Canada's bi-annual magazine, The Matchstick</li>
+                                <br>
+                                <li><span>Feb 2019 - Feb 2020</span><br>VEX Robotics Competition Competitor - Judges' Award Winner</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+
+        }
+    </script>
+
+
+    <!--Art Section-->
+    <body> 
+        <div class = "quote" id = "quote">
+            <h1>"Art speaks where words are unable to explain."<br><a class href="https://www.instagram.com/nirandoesart/"><i class="fas fa-external-link-alt"></i></a></h1>
+            <p><br>-Mathiole</p>
+            <video class = "video-bg" autoplay loop muted>
+            <source src = ".vscode/assets/images/quote.mp4" type="video/mp4">
+            </video>
+        </div>
+
+    </body>
+    
+ 
+    <section class ="art" id = "art">
+        <div class="max-width">
+            <div class ="arttitle">
+                <br>
+            </div>
+        </div>
+    </section> 
+
+
+ 
+
+<!--Projects-->
+
+    <!--Counter Animation-->
+    
+    <section class = "section_counter" id="section_counter">  
+
+        <div class="counter-up">
+            <div class = "counter-content">
+                <div class = "counter-box">
+                    <div class = "icon"><i class="fa-solid fa-robot"></i></div>
+                    <div class="counter-number">4</div>
+                    <div class="counter-text">Robotics Awards won</div>
+                </div>
+                <div class = "counter-box">
+                    <div class = "icon"><i class="fa-solid fa-laptop-code"></i></div>
+                    <div class="counter-number">75,000 </div>
+                    <div class="counter-text">Lines of Code</div>
+                </div>
+                <div class = "counter-box">
+                    <div class = "icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                    <div class="counter-number">95</div>
+                    <div class="counter-text">Grade 10 CS Grade</div>
+                </div>
+                <div class = "counter-box">
+                    <div class = "icon"><i class="fa-solid fa-user-check"></i></div>
+                    <div class="counter-number">3</div>
+                    <div class="counter-text">Hackathons Attended</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section class ="skillbars" id = "skillbars">
+        
+        <div class = "skills">
+            
+            <div class = "skill">
+                <div class ="skilltype">HTML</div>
+                <div class ="skillbar">
+                    <div class="skillper" per="90%" style="max-width:90%"></div>
+                </div>
+            </div>
+
+            <div class = "skill">
+                <div class ="skilltype">Python</div>
+                <div class ="skillbar">
+                    <div class="skillper" per="90%" style="max-width:90%"></div>
+                </div>
+            </div>
+
+            <div class = "skill">
+                <div class ="skilltype">CSS</div>
+                <div class ="skillbar">
+                    <div class="skillper" per="90%" style="max-width:90%"></div>
+                </div>
+            </div>
+
+            <div class = "skill">
+                <div class ="skilltype">Javascript</div>
+                <div class ="skillbar">
+                    <div class="skillper" per="70%" style="max-width:70%"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class = "projectsslideshow" id ="projectsslideshow">
+        
+            <div class = "slider">
+    
+                <div class="slide active">
+                    <img src = ".vscode/assets/images/ccpbackground.jpg">
+                    <div class = "layer">
+                        <div class ="info">
+                            <h2>Grade 11 Chemistry Course Project</h2>
+                            <p><b>This was one of my first projects. I embedded YouTube videos about the chemistry that I learned in a website that uses HTML, CSS and JS!</b></p>
+                            <a class href="https://nirancodes.github.io/airbags-chemistry/ccpindex.html"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="slide">
+                    <img src = ".vscode/assets/images/robotics.jpg">
+                    <div class ="info">
+                        <h2>Team TECHNOLOGICS</h2>
+                        <p><b>Won the Judges' Award with my team at a VEX Robotics competition. We used C++ to program a VEX V5 robot’s sensors to determine if another robot is surrounding it and to help the robot build a successful stack of blocks.</b></p>
+                    </div>
+                </div>
+    
+                <div class="slide">
+                    <img src = ".vscode/assets/images/counterbackground.jpg">
+                    <div class ="info">
+                        <h2>Project Grade 10 Python Summative</h2>
+                        <p><b>A simple Python project that acts as a directory for users to view the answers to particular questions on the summative.</b></p>
+                        <a class href="https://replit.com/@NN09CM795770/Summative-Part-1-Niranjana"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+    
+                <div class="slide">
+                    <img src = ".vscode/assets/images/librarysystem.jpg">
+                    <div class ="info">
+                        <h2>Project Library System</h2>
+                        <p><b>An ongoing library system project using HTML, CSS and Javascript. Information of "students" and "technicians" are to be saved on a local database instead of a Google Sheets system - which this portfolio uses in the "Contact" section!</b></p>
+                    </div>
+                </div>
+    
+                <div class = "slide_navigation">
+                    <i class="fa-solid fa-caret-left prev-btn"></i>
+                    <i class="fa-solid fa-caret-right next-btn"></i>
+                </div>
+                <div class = "navigation-visible">
+                    <div class="slide-icon active"></div>
+                    <div class="slide-icon"></div>
+                    <div class="slide-icon"></div>
+                    <div class="slide-icon"></div>
+                </div>
+            </div>
+            <div class = "moreprojects">
+                <a href = "https://github.com/nirancodes">View these and my upcoming projects here!</a>
+        </div>
+    
+
+
+    </section>
+
+
+    <script type="text/javascript">
+    const slider = document.querySelector(".slider");
+    const nextBtn = document.querySelector(".next-btn");
+    const prevBtn = document.querySelector(".prev-btn");
+    const slides = document.querySelectorAll(".slide");
+    const slideIcons = document.querySelectorAll(".slide-icon");
+    const numberOfSlides = slides.length;
+    var slideNumber = 0; 
+
+    //image slider next button
+    nextBtn.addEventListener("click", () => {
+        slides.forEach((slide) => {
+            slide.classList.remove("active");
+        });
+        slideIcons.forEach((slideIcon) => {
+            slideIcon.classList.remove("active");
+        });
+
+
+        slideNumber++;
+
+        if(slideNumber > (numberOfSlides - 1)){
+            slideNumber = 0;
+        }
+        slides[slideNumber].classList.add("active");
+        slideIcons[slideNumber].classList.add("active");
+    });
+
+    //image slider previous button
+    prevBtn.addEventListener("click", () => {
+        slides.forEach((slide) => {
+            slide.classList.remove("active");
+        });
+        slideIcons.forEach((slideIcon) => {
+            slideIcon.classList.remove("active");
+        });
+
+
+        slideNumber--;
+
+        if(slideNumber < 0){
+            slideNumber = numberOfSlides - 1;
+        }
+        slides[slideNumber].classList.add("active");
+        slideIcons[slideNumber].classList.add("active");
+    });
+
+    </script>
+
+<!-----contact-------->
+
+    <div id = "contact" id = "contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class = "contact-title">Get in Touch!</h1>
+                    <p><i class="fa-solid fa-envelope"></i>nnambiar.work@gmail.com</p>  
+                    <div class="socialmedia">
+                        <a href="https://www.linkedin.com/in/niranjana-nambiar/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/nirancodes"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Type your name here..." required>
+                        <input type="text" name="Email" placeholder="Type your e-mail here..." required>
+                        <textarea name="Message" rows="6" placeholder="Type your message here..." required></textarea>
+                        <button class="submit" class="submit">Submit!</button>
+                    </form>
+                </div>
+                <script>
+                    const scriptURL = 'https://script.google.com/macros/s/AKfycbwM-axRbgDkQCIXl-FbWXV-HABkidpysepAohX0V_Ltc6SXQn5VXW5YwP1YDoLDQjSmqA/exec'
+                    const form = document.forms['submit-to-google-sheet']
+                    
+                  
+                    form.addEventListener('submit', e => {
+                      e.preventDefault()
+                      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                        .then(response => {
+                            form.reset()
+                            alert('Thank you for your message! I will get back to you shortly via email!')
+                            //console.log('Success!', response)
+                        })
+                        .catch(error => console.error('Error!', error.message))
+                    })
+                  </script>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2022. Created with   <i class="fa-solid fa-hand-holding-heart"></i> by Niranjana Nambiar. All Rights Reserved.</p>
+        </div>
+    </div>
+
+
+
+</body>
+</html>
