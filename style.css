@@ -88,7 +88,7 @@ body{
 /* Home section styling */
 .home{
     width: 100%;
-    background: url(.vscode/assets/images/talking.jpg.jpg) no-repeat center; 
+    background: url("https://www.dropbox.com/s/wpbyq6dt100ofon/talking.jpg.jpg?raw=1") no-repeat center; 
     height: 125vh; 
     background-size:cover; 
     background-position: center;
@@ -320,7 +320,7 @@ body{
 
 /*Counter section Styling*/
 .counter-up{
-    background: url(../vscode/assets/images/presentation.JPG) no-repeat;
+    background: url("https://www.dropbox.com/s/eiogr3n6e9tq5px/presentation.JPG?raw=1") no-repeat;
     min-height: 50vh;
     display: flex; 
     align-items: center;
