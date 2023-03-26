@@ -320,7 +320,7 @@ body{
 
 /*Counter section Styling*/
 .counter-up{
-    background: url(.vscode/assets/images/presentation.JPG) no-repeat;
+    background: url(../vscode/assets/images/presentation.JPG) no-repeat;
     min-height: 50vh;
     display: flex; 
     align-items: center;
